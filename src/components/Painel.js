@@ -1,8 +1,18 @@
-import React from 'react';
+import React, {Component} from 'react';
 import { View, Text } from 'react-native';
 
-export default props => ( 
-    <View>
-        <Text>Painel</Text>
-    </View>   
-)
+import Comando from './Comando';
+import Entrada from './Entrada';
+import Operacao from './Operacao';
+
+export default class Painel extends Component  {
+    render() {
+        return(
+            <View>
+                <Entrada />
+                <Operacao />
+                <Comando />
+            </View>   
+        )
+    }
+}
