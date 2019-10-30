@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet, Button } from 'react-native';
 
 export default class Comando extends Component  {
     render() {
         return(
-            <View>
-                <Text>Comando</Text>
-            </View>     
+            <Button title="Calcular" />    
         )
     }
 }

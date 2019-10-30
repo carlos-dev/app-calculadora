@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { View, Text } from 'react-native';
+import { View, StyleSheet } from 'react-native';
 
 import Comando from './Comando';
 import Entrada from './Entrada';
@@ -8,7 +8,7 @@ import Operacao from './Operacao';
 export default class Painel extends Component  {
     render() {
         return(
-            <View>
+            <View style={styles.mainContent}>
                 <Entrada />
                 <Operacao />
                 <Comando />
@@ -16,3 +16,10 @@ export default class Painel extends Component  {
         )
     }
 }
+
+
+const styles = StyleSheet.create({
+    mainContent: {
+        marginHorizontal: 15,
+    }
+})

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Text, TextInput, StyleSheet } from 'react-native';
+import { TextInput, StyleSheet } from 'react-native';
 
 export default class Numero extends Component  {
     render() {
@@ -13,7 +13,7 @@ const styles = StyleSheet.create({
     numero: {
         backgroundColor: '#eee',
         width: 140,
-        height: 80,
+        height: 60,
         fontSize: 20,
         padding: 10,
     }
