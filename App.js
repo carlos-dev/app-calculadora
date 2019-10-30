@@ -8,7 +8,7 @@ export default class App extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <ImageBackground source={require('./assets/Wallpaper4k-cidade-Colorindonuvens-7.jpg')} style={{width: '100%', height: '100%', flex: 1, alignItems: 'center', justifyContent: 'center', resizeMode: 'contain'}} style={styles.main}>
+        <ImageBackground style={{width: '100%', height: '100%', flex: 1, alignItems: 'center', justifyContent: 'center', resizeMode: 'contain'}} style={styles.main}>
           <Topo />
           <Resultado />
           <Painel />

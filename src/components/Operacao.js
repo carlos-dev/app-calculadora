@@ -1,16 +1,20 @@
 import React, { Component } from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet, Picker } from 'react-native';
 
 export default class Operacao extends Component  {
     render() {
         return(
-            <View>
-                <Text>Operacao</Text>
-            </View>     
+            <Picker style={styles.operacao}>
+                <Picker.Item label='soma' value='soma' />
+                <Picker.Item label='subtração' value='subtracao' />
+            </Picker> 
         )
     }
 }
 
 const styles = StyleSheet.create({
-    
+    operacao: {
+        marginTop: 15,
+        marginBottom: 15,
+    }
 })
